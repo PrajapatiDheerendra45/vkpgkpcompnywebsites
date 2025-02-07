@@ -33,14 +33,14 @@ const HeroSection = () => {
     <div
       className="absolute inset-0 bg-cover bg-center "
       style={{
-        backgroundImage: `url(${bgimgherosection}) blur(4px)`,
+        backgroundImage: `url(${bgimgherosection}) `,
         filter: "blur(3px)",
       }}
     ></div>
   
     {/* Button without Blur */}
     <div className="absolute top-1/2 left-1/2 md:left-1/4 -translate-x-1/2 -translate-y-1/2">
-      <button className="bg-green-700 hover:bg-blue-700 text-white shadow-2xl text-xl font-semibold py-4 px-8 rounded">
+      <button className="bg-green-700 hover:bg-blue-700 text-white shadow-2xl text-1xl font-semibold py-4 px-8 rounded">
         Looking For a Job?
       </button>
     </div>
