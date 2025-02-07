@@ -26,7 +26,7 @@ const App = () => {
      <Footer/>
     
 
-     <div className="fixed bottom-0 left-0 p-4 flex flex-col space-y-4"> {/* Vertical stacking with space-y-4 */}
+     <div className="fixed bottom-0 left-0 p-4 flex flex-col space-y-4"> 
       <a href="#" className="text-white hover:text-gray-300">
         <FaInstagram  className="text-3xl" style={{ color: 'red' }} /> {/* Instagram color */}
       </a>
