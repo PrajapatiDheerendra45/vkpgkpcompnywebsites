@@ -3,6 +3,11 @@ import Headers from './component/Headers'
 import HeroSection from './component/HeroSection'
 import { FaInstagram, FaFacebook, FaLinkedin, FaWhatsapp, FaTwitter } from 'react-icons/fa';
 import AboutUs from './component/AboutUs';
+import WhatWeDo from './component/WhatWeDo';
+import WhyChooseUs from './component/WhyChooseUs';
+import WeHire from './component/WeHire';
+import WeValueTeamWork from './component/WeValueTeamWork';
+import OurClients from './component/OurClients';
 
 const App = () => {
   return (
@@ -10,6 +15,11 @@ const App = () => {
      <Headers/>
      <HeroSection/>
      <AboutUs/>
+     <WhatWeDo/>
+     <WhyChooseUs/>
+     <WeHire/>
+     <WeValueTeamWork/>
+     {/* <OurClients/> */}
 
      <div className="fixed bottom-0 left-0 p-4 flex flex-col space-y-4"> {/* Vertical stacking with space-y-4 */}
       <a href="#" className="text-white hover:text-gray-300">
