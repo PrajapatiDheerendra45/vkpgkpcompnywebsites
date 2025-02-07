@@ -5,6 +5,10 @@ import {
   faMobileAlt,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
+import { BiSolidPhoneCall } from "react-icons/bi";
+
+import { Building, MapPin } from "lucide-react";
+import { FaHome } from "react-icons/fa";
 
 function Footer() {
   const handleSubmit = (event) => {
@@ -22,8 +26,8 @@ function Footer() {
         <div className="text-center mb-8">
           {" "}
           {/* Main heading */}
-          <h2 className="text-4xl font-bold mb-4">Get in touch with us</h2>
-          <p className="text-lg mb-2">INDIA MANPOWER SOLUTIONS PVT LTD</p>
+          <h2 className="text-6xl font-bold mb-4">Get in touch with us</h2>
+          <p className="text-2xl mb-2 mt-5 mb-5">INDIA VRS MANPOWER SOLUTIONS PVT LTD</p>
           <p className="text-sm">
             AN ISO 9001:2015 CERTIFIED RECRUITMENT COMPANY
           </p>
@@ -32,13 +36,13 @@ function Footer() {
           {" "}
           {/* Responsive flexbox */}
           <div className="flex flex-col items-center">
-            <FontAwesomeIcon icon={faPhoneAlt} className="text-2xl mb-2" />
+            <FaHome  icon={faPhoneAlt} className="text-2xl mb-2" />
             <p className="md:hidden">PHONE</p>
             <p className="hidden md:block">PHONE</p>
             <p>+91-731-4071119</p>
           </div>
           <div className="flex flex-col items-center">
-            <FontAwesomeIcon icon={faMobileAlt} className="text-2xl mb-2" />
+            <BiSolidPhoneCall icon={faMobileAlt} className="text-2xl mb-2" />
             <p className="md:hidden">MOBILE</p>
             <p className="hidden md:block">MOBILE</p>
             <p>+91-7566661930</p>
@@ -136,35 +140,46 @@ function Footer() {
                 </form>
               </div>
             </div>
-            <div className="text-center text-black grid grid-cols-4 md:grid-cols-2 gap-6 text-black ">
-              <div className=" rounded-lg shadow-lg p-6 text-center">
-                <h4 className="font-bold text-lg mb-3 text-indigo-600">
-                  CORPORATE OFFICE
-                </h4>
-                <p>IMS India Manpower Solutions Pvt. Ltd.,</p>
-                <p>233-241, 2nd floor, Orbit Mall A.B. Road,</p>
-                <p>Near C-21 Mall, MR9 Square, Vijay Nagar,</p>
-                <p>Indore, Madhya Pradesh 452010</p>
-              </div>
+            <div className="text-center text-black grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+      {/* Corporate Office */}
+      <div className="bg-gradient-to-br from-indigo-100 to-indigo-300 border border-indigo-400 shadow-lg rounded-lg p-6">
+        <div className="flex flex-col items-center">
+          <Building className="w-10 h-10 text-indigo-700 mb-3" />
+          <h4 className="font-bold text-xl text-indigo-700 mb-2">
+            Corporate Office
+          </h4>
+          <p className="text-gray-800 font-medium">
+            VRS India Manpower Solutions Pvt. Ltd.
+          </p>
+          <p className="text-gray-700">233-241, 2nd Floor, Orbit Mall</p>
+          <p className="text-gray-700">Near C-21 Mall, MR9 Square</p>
+          <p className="text-gray-700">Vijay Nagar, Indore, MP - 452010</p>
+        </div>
+      </div>
 
-              {/* Branch Office */}
-              <div className=" rounded-lg shadow-lg p-6 text-center">
-                <h4 className="font-bold text-lg mb-3 text-indigo-600">
-                  BRANCH OFFICE
-                </h4>
-                <p>IMS India Manpower Solutions Pvt. Ltd.,</p>
-                <p>Office No. 264, 2nd floor, Orbit Mall,</p>
-                <p>A.B. Road, Near C-21 Mall, Vijay Nagar,</p>
-                <p>Indore, Madhya Pradesh 452010</p>
-              </div>
-            </div>
+      {/* Branch Office */}
+      <div className="bg-gradient-to-br from-teal-100 to-teal-300 border border-teal-400 shadow-lg rounded-lg p-6">
+        <div className="flex flex-col items-center">
+          <MapPin className="w-10 h-10 text-teal-700 mb-3" />
+          <h4 className="font-bold text-xl text-teal-700 mb-2">
+            Branch Office
+          </h4>
+          <p className="text-gray-800 font-medium">
+            VRS India Manpower Solutions Pvt. Ltd.
+          </p>
+          <p className="text-gray-700">Office No. 264, 2nd Floor, Orbit Mall</p>
+          <p className="text-gray-700">Near C-21 Mall, Vijay Nagar</p>
+          <p className="text-gray-700">Indore, MP - 452010</p>
+        </div>
+      </div>
+    </div>
           </div>
         </div>
         <div className="text-center mt-8">
           {" "}
           {/* Copyright notice */}
           <p className="text-gray-200">
-            Copyright © 2023 India Manpower Solutions Pvt Ltd
+            Copyright © 2023 India VRS Manpower Solutions Pvt Ltd
           </p>
         </div>
       </div>
