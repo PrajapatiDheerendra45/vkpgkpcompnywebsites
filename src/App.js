@@ -3,6 +3,8 @@ import Headers from './component/Headers'
 import HeroSection from './component/HeroSection'
 import { FaInstagram, FaFacebook, FaLinkedin, FaWhatsapp, FaTwitter } from 'react-icons/fa';
 import AboutUs from './component/AboutUs';
+import Footer from './component/Footer';
+
 
 const App = () => {
   return (
@@ -10,7 +12,7 @@ const App = () => {
      <Headers/>
      <HeroSection/>
      <AboutUs/>
-
+      <Footer/>
      <div className="fixed bottom-0 left-0 p-4 flex flex-col space-y-4"> {/* Vertical stacking with space-y-4 */}
       <a href="#" className="text-white hover:text-gray-300">
         <FaInstagram  className="text-3xl" style={{ color: 'red' }} /> {/* Instagram color */}
