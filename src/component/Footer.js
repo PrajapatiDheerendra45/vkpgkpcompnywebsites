@@ -27,7 +27,9 @@ function Footer() {
           {" "}
           {/* Main heading */}
           <h2 className="text-6xl font-bold mb-4">Get in touch with us</h2>
-          <p className="text-2xl mb-2 mt-5 mb-5">INDIA VRS MANPOWER SOLUTIONS PVT LTD</p>
+          <p className="text-2xl mb-2 mt-5 mb-5">
+            INDIA VRS MANPOWER SOLUTIONS PVT LTD
+          </p>
           <p className="text-sm">
             AN ISO 9001:2015 CERTIFIED RECRUITMENT COMPANY
           </p>
@@ -36,7 +38,7 @@ function Footer() {
           {" "}
           {/* Responsive flexbox */}
           <div className="flex flex-col items-center">
-            <FaHome  icon={faPhoneAlt} className="text-2xl mb-2" />
+            <FaHome icon={faPhoneAlt} className="text-2xl mb-2" />
             <p className="md:hidden">PHONE</p>
             <p className="hidden md:block">PHONE</p>
             <p>+91-731-4071119</p>
@@ -61,7 +63,7 @@ function Footer() {
             {" "}
             {/* Grid layout */}
             <div className="">
-              <div className="  text-black rounded-2xl shadow-2xl p-8 max-w-md mx-auto">
+              <div className="bg-white  text-black rounded-2xl shadow-2xl p-8 max-w-md mx-auto">
                 <h3 className="text-2xl font-extrabold mb-6 text-center text-indigo-600">
                   Contact Us
                 </h3>
@@ -133,7 +135,7 @@ function Footer() {
                   </div>
                   <button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-bold py-3 rounded-lg shadow-lg hover:from-indigo-600 hover:to-purple-600 transition duration-300"
+                    className="w-full bg-gradient-to-r from-green-500 to-green-800 text-white font-bold py-3 rounded-lg shadow-lg hover:from-indigo-600 hover:to-purple-600 transition duration-300"
                   >
                     Submit
                   </button>
@@ -141,38 +143,44 @@ function Footer() {
               </div>
             </div>
             <div className="text-center text-black grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
-      {/* Corporate Office */}
-      <div className="bg-gradient-to-br from-indigo-100 to-indigo-300 border border-indigo-400 shadow-lg rounded-lg p-6">
-        <div className="flex flex-col items-center">
-          <Building className="w-10 h-10 text-indigo-700 mb-3" />
-          <h4 className="font-bold text-xl text-indigo-700 mb-2">
-            Corporate Office
-          </h4>
-          <p className="text-gray-800 font-medium">
-            VRS India Manpower Solutions Pvt. Ltd.
-          </p>
-          <p className="text-gray-700">233-241, 2nd Floor, Orbit Mall</p>
-          <p className="text-gray-700">Near C-21 Mall, MR9 Square</p>
-          <p className="text-gray-700">Vijay Nagar, Indore, MP - 452010</p>
-        </div>
-      </div>
+              {/* Corporate Office */}
+              <div className="bg-gradient-to-br from-indigo-100 to-indigo-300 border border-indigo-400 shadow-lg rounded-lg p-6">
+                <div className="flex flex-col items-center">
+                  <Building className="w-10 h-10 text-indigo-700 mb-3" />
+                  <h4 className="font-bold text-xl text-indigo-700 mb-2">
+                    Corporate Office
+                  </h4>
+                  <p className="text-gray-800 font-medium">
+                    VRS India Manpower Solutions Pvt. Ltd.
+                  </p>
+                  <p className="text-gray-700">
+                    233-241, 2nd Floor, Orbit Mall
+                  </p>
+                  <p className="text-gray-700">Near C-21 Mall, MR9 Square</p>
+                  <p className="text-gray-700">
+                    Vijay Nagar, Indore, MP - 452010
+                  </p>
+                </div>
+              </div>
 
-      {/* Branch Office */}
-      <div className="bg-gradient-to-br from-teal-100 to-teal-300 border border-teal-400 shadow-lg rounded-lg p-6">
-        <div className="flex flex-col items-center">
-          <MapPin className="w-10 h-10 text-teal-700 mb-3" />
-          <h4 className="font-bold text-xl text-teal-700 mb-2">
-            Branch Office
-          </h4>
-          <p className="text-gray-800 font-medium">
-            VRS India Manpower Solutions Pvt. Ltd.
-          </p>
-          <p className="text-gray-700">Office No. 264, 2nd Floor, Orbit Mall</p>
-          <p className="text-gray-700">Near C-21 Mall, Vijay Nagar</p>
-          <p className="text-gray-700">Indore, MP - 452010</p>
-        </div>
-      </div>
-    </div>
+              {/* Branch Office */}
+              <div className="bg-gradient-to-br from-teal-100 to-teal-300 border border-teal-400 shadow-lg rounded-lg p-6">
+                <div className="flex flex-col items-center">
+                  <MapPin className="w-10 h-10 text-teal-700 mb-3" />
+                  <h4 className="font-bold text-xl text-teal-700 mb-2">
+                    Branch Office
+                  </h4>
+                  <p className="text-gray-800 font-medium">
+                    VRS India Manpower Solutions Pvt. Ltd.
+                  </p>
+                  <p className="text-gray-700">
+                    Office No. 264, 2nd Floor, Orbit Mall
+                  </p>
+                  <p className="text-gray-700">Near C-21 Mall, Vijay Nagar</p>
+                  <p className="text-gray-700">Indore, MP - 452010</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="text-center mt-8">

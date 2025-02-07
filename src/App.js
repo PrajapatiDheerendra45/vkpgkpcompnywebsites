@@ -22,8 +22,9 @@ const App = () => {
      <WhyChooseUs/>
      <WeHire/>
      <WeValueTeamWork/>
+     <OurClients/>
      <Footer/>
-     {/* <OurClients/> */}
+    
 
      <div className="fixed bottom-0 left-0 p-4 flex flex-col space-y-4"> {/* Vertical stacking with space-y-4 */}
       <a href="#" className="text-white hover:text-gray-300">

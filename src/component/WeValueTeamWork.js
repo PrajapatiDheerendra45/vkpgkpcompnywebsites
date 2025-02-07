@@ -4,8 +4,7 @@ const WeValueTeamWork = () => {
   return (
     <section className="relative bg-[#f3fbf7] py-16 px-6 md:px-16">
       {/* Background Pattern */}
-      <div className="absolute top-0 left-0 w-full h-24 bg-green-100 transform -skew-y-3"></div>
-      <div className="absolute bottom-0 left-0 w-full h-24 bg-green-100 transform skew-y-3"></div>
+   
 
       {/* Content Container */}
       <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
