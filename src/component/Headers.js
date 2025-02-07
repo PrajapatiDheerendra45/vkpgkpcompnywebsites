@@ -9,7 +9,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-yellow-200 relative">
+    <header className=" relative">
       <div className="contact-info text-left bg-black text-white p-2 w-full">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row md:items-left">
