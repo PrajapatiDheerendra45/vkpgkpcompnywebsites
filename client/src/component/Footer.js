@@ -47,7 +47,7 @@ function Footer() {
 
     // Send data to backend
     try {
-      const response = await fetch("http://localhost:5000/mail/sendEmail", {
+      const response = await fetch("mail/sendEmail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
