@@ -2,9 +2,10 @@ import nodemailer from 'nodemailer';
 import submitFormModel from '../models/mailModel.js'; 
 export const mailController = async (req, res) => {
   try {
-    const { name, email, message } = req.body;
+    const { name,mobile, email, message } = req.body;
+    console.log(name,mobile, email, message)
     // Ensure all required fields are provided
-    if (!name || !email || !message) {
+    if (!name || !mobile || !email || !message) {
       return res.status(400).send({
         success: false,
         message: "All fields are required",
@@ -23,7 +24,7 @@ export const mailController = async (req, res) => {
       from:  "prajapatidheerendra45@gmail.com", // Sender's email address
       to: email, 
       subject: 'Form Submission Received',
-      text: `Hi ${name},\n Email id:${email}\n\nThank you for your message:\n\n"${message}"\n\nWe will get back to you shortly!`, // Email body
+      text: `Hi ${name},\n Mobile:${mobile} \n Email id:${email}\n\nThank you for your message:\n\n"${message}"\n\nWe will get back to you shortly!`, // Email body
     };
     // Send the email
     const info = await transporter.sendMail(mailOptions);
