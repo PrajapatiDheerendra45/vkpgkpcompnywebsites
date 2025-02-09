@@ -24,10 +24,10 @@ const Header = () => {
               {" "}
               {/* Added w-full md:w-auto and margin top */}
               <a
-                href="mailto:info@indiamanpowersolution.com"
+                href="mailto:info@manpowersolution.com"
                 className="text-white hover:text-blue-300 md:ml-2 text-lg"
               >
-                ✉️info@indiamanpowersolution.com
+                ✉️info@manpowersolution.com
               </a>
             </div>
           </div>

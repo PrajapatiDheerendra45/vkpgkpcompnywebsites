@@ -48,9 +48,9 @@ const HeroSection = () => {
     {/* Marquee Text */}
     <div className="absolute bottom-0 w-full bg-gradient-to-r from-[#a7ead0] via-[#dff8ee] to-[#a7ead0] bg-opacity-50 text-black p-3 text-sm whitespace-nowrap">
       <p className="marquee" ref={marqueeRef}>
-        VRS India Manpower Solutions Pvt. Ltd. does not charge any consultancy
+        VRS  Manpower Solutions Pvt. Ltd. does not charge any consultancy
         fees or Registration fees from the candidates. If anyone asks for any
-        charges on behalf of VRS India Manpower Solutions Pvt. Ltd., kindly
+        charges on behalf of VRS  Manpower Solutions Pvt. Ltd., kindly
         inform us.
       </p>
     </div>

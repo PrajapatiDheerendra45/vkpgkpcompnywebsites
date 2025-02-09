@@ -28,7 +28,7 @@ const WeValueTeamWork = () => {
           </h2>
           <div className="w-16 h-1 bg-green-500 my-4"></div>
           <p className="text-gray-700 text-lg leading-relaxed">
-            At India VRS Manpower Solutions Pvt. Ltd., we take great pride in
+            At  VRS Manpower Solutions Pvt. Ltd., we take great pride in
             providing our employees with exceptional working conditions. We
             understand that a positive work environment is crucial for
             productivity and job satisfaction, which is why we go above and

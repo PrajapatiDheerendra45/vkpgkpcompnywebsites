@@ -9,7 +9,7 @@ const AboutUs = () => {
       icon: <FontAwesomeIcon icon={faHome} size="2x" />,
       title: "COMPANY PROFILE",
       description:
-        "VRS India Manpower Solutions Private Limited (V.M.S.) are executive search and a recruitment firm working on Pan India with presence in 29 states. We specialize in understanding the client's needs and based on that we provide the suitable candidate...",
+        "VRS  Manpower Solutions Private Limited (V.M.S.) are executive search and a recruitment firm working on Pan  with presence in 29 states. We specialize in understanding the client's needs and based on that we provide the suitable candidate...",
       link: "LEARN MORE",
       gradient: "from-[#ff9a9e] via-[#fad0c4] to-[#fad0c4]",
     },

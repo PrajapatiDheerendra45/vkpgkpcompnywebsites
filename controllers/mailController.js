@@ -3,7 +3,7 @@ import submitFormModel from '../models/mailModel.js';
 export const mailController = async (req, res) => {
   try {
     const { name,mobile, email, message } = req.body;
-    console.log(name,mobile, email, message)
+
     // Ensure all required fields are provided
     if (!name || !mobile || !email || !message) {
       return res.status(400).send({
