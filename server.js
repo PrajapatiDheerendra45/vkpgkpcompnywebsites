@@ -19,6 +19,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+
 // Now, use __dirname safely
 app.use(express.static(path.join(__dirname, 'client', 'build')));
 
@@ -28,6 +29,7 @@ app.use(express.static(path.join(__dirname, 'client', 'build')));
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
   });
+  
   
 app.use("/mail",mailRoute)
   const PORT = process.env.PORT || 5000;
