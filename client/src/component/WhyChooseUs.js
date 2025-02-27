@@ -13,7 +13,7 @@ const WhyChooseUs = () => {
           <div className="bg-[#4C3FB5] text-white text-lg font-semibold py-2 px-4 rounded-t-lg text-center">
             Job Sectors
           </div>
-          <div className="border border-[#4C3FB5] rounded-b-lg p-4 space-y-3">
+          <div className="border border-[#4C3FB5] shadow-2xl shadow-blue-500 rounded-b-lg p-4 space-y-3">
             {["BPO", "Finance", "Hospitality", "IT", "Real Estate & more...."].map(
               (item, index) => (
                 <div
@@ -32,7 +32,7 @@ const WhyChooseUs = () => {
           <div className="bg-[#5AC59A] text-white text-lg font-semibold py-2 px-4 rounded-t-lg text-center">
             Functions
           </div>
-          <div className="border border-[#5AC59A] rounded-b-lg p-4 space-y-3">
+          <div className="border border-[#5AC59A] shadow-2xl shadow-green-500 rounded-b-lg p-4 space-y-3">
             {[
               "Finance & Accounts",
               "Sales & Marketing",
@@ -53,10 +53,10 @@ const WhyChooseUs = () => {
 
         {/* Our Services */}
         <div className="w-full md:w-1/3">
-          <div className="bg-[#4C3FB5] text-white text-lg font-semibold py-2 px-4 rounded-t-lg text-center">
+          <div className="bg-[#4C3FB5] text-white text-lg font-semibold  py-2 px-4 rounded-t-lg text-center">
             Our Services
           </div>
-          <div className="border border-[#4C3FB5] rounded-b-lg p-4 space-y-3">
+          <div className="border border-[#4C3FB5] rounded-b-lg p-4 space-y-3 shadow-2xl shadow-blue-500">
             {["BULK HIRING", "HR SOLUTIONS", "CONSULTING", "PAYROLL"].map(
               (item, index) => (
                 <div

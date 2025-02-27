@@ -10,6 +10,7 @@ import WhyChooseUs from './component/WhyChooseUs';
 import WeHire from './component/WeHire';
 import WeValueTeamWork from './component/WeValueTeamWork';
 import OurClients from './component/OurClients';
+import Services from './component/Services';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
      <Headers/>
      <HeroSection/>
      <AboutUs/>
+     <Services/>
    
      <WhatWeDo/>
      <WhyChooseUs/>

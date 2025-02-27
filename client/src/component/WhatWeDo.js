@@ -41,7 +41,7 @@ const WhatWeDo = () => {
               {cardData.map((card, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-lg shadow-md p-6 transition duration-300 transform hover:scale-105 h-full" // Added h-full
+                  className="bg-white rounded-lg shadow-2xl shadow-blue-500 p-6 transition duration-300 transform hover:scale-105 h-full" // Added h-full
                 >
                   <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
                   <p className="text-gray-700 mb-4">{card.description}</p>

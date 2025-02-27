@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import bgimgherosection from "../assets/images/bg.webp";
+import bgimgherosection from "../assets/images/herosctionbgimg.jpg";
 
 const HeroSection = () => {
   const marqueeRef = useRef(null);
@@ -33,8 +33,8 @@ const HeroSection = () => {
     <div
       className="absolute inset-0 bg-cover bg-center "
       style={{
-        backgroundImage: `url(${bgimgherosection}) `,
-        filter: "blur(3px)",
+        backgroundImage: `url(${"https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=600"}) `,
+        filter: "blur(0px)",
       }}
     ></div>
   

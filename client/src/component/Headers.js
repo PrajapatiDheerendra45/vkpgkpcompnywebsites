@@ -35,7 +35,7 @@ const Header = () => {
       </div>
       <div className="container mx-auto flex justify-between items-center max-w-7xl">
         <div className="logo">
-          <img src={logo} alt="Your Logo" className="max-h-12 " />
+          <img src={logo} alt="Your Logo" className=" h-18" />
         </div>
         <nav className="navigation">
           <ul

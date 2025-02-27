@@ -1,8 +1,8 @@
-import nodemailer from 'nodemailer';
-import submitFormModel from '../models/mailModel.js'; 
+import nodemailer from "nodemailer";
+import submitFormModel from "../models/mailModel.js";
 export const mailController = async (req, res) => {
   try {
-    const { name,mobile, email, message } = req.body;
+    const { name, mobile, email, message } = req.body;
 
     // Ensure all required fields are provided
     if (!name || !mobile || !email || !message) {
@@ -13,31 +13,45 @@ export const mailController = async (req, res) => {
     }
     // Set up nodemailer transporter
     let transporter = nodemailer.createTransport({
-        service:"Gmail",  
-        auth:{
-            user:process.env.EMAIL_USER,
-            pass:process.env.EMAIL_PASS,
-        }
-    })
+      service: "Gmail",
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+      },
+    });
     // Email options
     const mailOptions = {
-      from:  "prajapatidheerendra45@gmail.com", // Sender's email address
-      to: email, 
-      subject: 'Form Submission Received',
-      text: `Hi ${name},\n Mobile:${mobile} \n Email id:${email}\n\nThank you for your message:\n\n"${message}"\n\nWe will get back to you shortly!`, // Email body
+      from: email, // Sender's email address
+      to: "vrs.solution12@gmail.com",
+      subject: "Form Submission Received",
+      text: `Dear ${name},
+
+      You have received a new inquiry from a potential customer.
+      
+      Customer Details:
+      - Name: ${name}
+      - Mobile: ${mobile}
+      - Email: ${email}
+      
+      Message from Customer:
+      "${message}"
+      
+      Please get in touch with them as soon as possible.
+      
+      Best Regards,
+      VRS Manpower Solutions`,
     };
     // Send the email
     const info = await transporter.sendMail(mailOptions);
     // Optionally save to MongoDB
-    await submitFormModel.create({ name, email, message }); // Save the submission to DB
+    // await submitFormModel.create({ name, email, message }); // Save the submission to DB
 
     // Return success response
     return res.status(200).send({
       success: true,
-      message: 'Form submitted successfully, email sent!',
+      message: "Form submitted successfully, email sent!",
       info,
     });
-
   } catch (error) {
     console.error("Error in formSubmitController:", error);
     return res.status(500).send({
