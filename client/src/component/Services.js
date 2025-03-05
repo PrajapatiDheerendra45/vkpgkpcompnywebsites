@@ -1,93 +1,107 @@
 import React from "react";
-import mock from "../assets/images/mock.jpg"
-import resume from "../assets/images/resume.jpg"
-import careers from "../assets/images/careers.jpg"
-import it from "../assets/images/it.jpg"
-import hiring from "../assets/images/hiring.jpg"
-import training from "../assets/images/training.jpg"
-import live from "../assets/images/live.jpg"
-import counslt from "../assets/images/counslt.jpg"
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUsers, faChartLine, faShieldAlt, faHandshake } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
+import it from "../assets/images/it.jpg";
+import hiring from "../assets/images/hiring.jpg";
+import payroll from "../assets/images/payroll.jpg";
+import admissions from "../assets/images/admissions.jpg";
+import coaching from "../assets/images/coaching.jpg";
+import hospital from "../assets/images/hospital.jpg";
+import manufacturing from "../assets/images/manufacturing.jpg";
+import resume from "../assets/images/resume.jpg";
+import training from "../assets/images/training.jpg";
+import internship from "../assets/images/internship.jpg";
+import consulting from "../assets/images/consulting.jpg";
 
 const services = [
   {
-    title: "Mock Interview",
-    description:
-      "A simulated job interview that allows candidates to practice and prepare for real interviews.",
-    image:mock,
-  },
-  {
-    title: "Resume/CV Review",
-    description:
-      "Get expert feedback on your resume to improve your chances of landing your dream job.",
-    image: resume
-  },
-  {
-    title: "Career Coaching",
-    description:
-      "One-on-one career guidance to help with career planning, job changes, and skill development.",
-    image: careers
-  },
-  {
     title: "IT & Non-IT Recruitment",
-    description:
-      "Connecting the right talent with the right opportunities in both IT and Non-IT industries.",
+    description: "Find the best talent for your organization with our specialized recruitment solutions.",
     image: it,
   },
   {
-    title: "Bulk Hiring Solutions",
-    description:
-      "Efficient and fast bulk hiring solutions tailored to business needs.",
+    title: "Bulk Hiring",
+    description: "Streamlined recruitment for large-scale hiring needs to ensure efficient staffing.",
     image: hiring,
   },
   {
+    title: "Payroll Management",
+    description: "Efficient and accurate payroll solutions to handle salary processing seamlessly.",
+    image: payroll,
+  },
+  {
+    title: "Colleges – Admissions",
+    description: "Assistance with student admissions and placement support for educational institutions.",
+    image: admissions,
+  },
+  {
+    title: "Coaching – Teachers & Student Admissions",
+    description: "Recruitment of qualified teachers and admission support for coaching institutes.",
+    image: coaching,
+  },
+  {
+    title: "Hospitals – Staff, Security, Nurses, Marketing",
+    description: "Specialized staffing solutions for healthcare organizations.",
+    image: hospital,
+  },
+  {
+    title: "Manufacturing Units – Workers",
+    description: "Providing skilled and semi-skilled workers for manufacturing and production units.",
+    image: manufacturing,
+  },
+  {
+    title: "Resume Creation",
+    description: "Professional resume writing services to help candidates stand out in job applications.",
+    image: resume,
+  },
+  {
     title: "IT Training & Skill Development",
-    description:
-      "Industry-relevant training programs to keep up with the latest technology trends.",
+    description: "Training programs designed to enhance technical and soft skills for career growth.",
     image: training,
   },
   {
-    title: "HR Internships & Live Projects",
-    description:
-      "Real-world HR internship opportunities to gain practical experience.",
-    image: live,
+    title: "HR Internship & Live Projects",
+    description: "Hands-on experience for HR students and professionals through live projects.",
+    image: internship,
   },
   {
     title: "Marketing & Business Consulting",
-    description:
-      "Strategic marketing and business consulting services to drive growth.",
-    image: counslt,
+    description: "Strategic consulting to grow your business and improve marketing efforts.",
+    image: consulting,
   },
 ];
 
 const Services = () => {
   return (
-    <div className="py-12 bg-gray-100">
-      <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-6">
-          Our Services
-        </h2>
-        <p className="text-center text-gray-600 mb-10">
-          From career guidance to corporate hiring, we provide expert services tailored for individuals and businesses.
+    <section className="py-12 bg-gray-100">
+      <div className="max-w-6xl mx-auto px-6 text-center">
+        <h2 className="text-4xl font-bold text-gray-800 mb-6">Our Services</h2>
+        <p className="text-lg text-gray-600 mb-10">
+          No matter your industry or requirement, we provide customized solutions that deliver results.
         </p>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-white rounded-2xl shadow-2xl shadow-red-500 hover:shadow-lg transition cover p-3"
+              className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 p-5"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true }}
             >
               <img
                 src={service.image}
                 alt={service.title}
-                className="rounded-xl w-full h-70 object-cover"
+                className="rounded-xl w-full h-56 object-cover mb-4"
               />
-              <h3 className="text-xl font-semibold mt-4">{service.title}</h3>
-              <p className="text-gray-600 mt-2">{service.description}</p>
-            </div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">{service.title}</h3>
+              <p className="text-gray-600">{service.description}</p>
+            </motion.div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -11,12 +11,15 @@ import WeHire from './component/WeHire';
 import WeValueTeamWork from './component/WeValueTeamWork';
 import OurClients from './component/OurClients';
 import Services from './component/Services';
+import HomePage from './component/HomePage';
+import IndustriesWeServe from './component/IndustriesWeServe';
 
 const App = () => {
   return (
     <>
      <Headers/>
      <HeroSection/>
+     <HomePage/>
      <AboutUs/>
      <Services/>
    
@@ -24,6 +27,7 @@ const App = () => {
      <WhyChooseUs/>
      <WeHire/>
      <WeValueTeamWork/>
+     <IndustriesWeServe/>
      <OurClients/>
      <Footer/>
     

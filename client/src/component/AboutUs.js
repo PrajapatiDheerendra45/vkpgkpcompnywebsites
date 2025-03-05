@@ -1,67 +1,74 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faBullseye, faHandshake } from "@fortawesome/free-solid-svg-icons";
+import { faUsers, faChartLine, faShieldAlt, faHandshake } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 
 const AboutUs = () => {
   const cardData = [
     {
-      icon: <FontAwesomeIcon icon={faHome} size="2x" />,
-      title: "COMPANY PROFILE",
+      icon: <FontAwesomeIcon icon={faUsers} size="2x" />,
+      title: "Experience",
       description:
-        "VRS  Manpower Solutions Private Limited (V.M.S.) are executive search and a recruitment firm working on Pan  with presence in 29 states. We specialize in understanding the client's needs and based on that we provide the suitable candidate...",
-      link: "LEARN MORE",
+        "Years of expertise in manpower and HR solutions, ensuring quality recruitment and business success.",
       gradient: "from-[#ff9a9e] via-[#fad0c4] to-[#fad0c4]",
     },
     {
-      icon: <FontAwesomeIcon icon={faBullseye} size="2x" />,
-      title: "COMPANY OBJECTIVE",
+      icon: <FontAwesomeIcon icon={faChartLine} size="2x" />,
+      title: "Diverse Services",
       description:
-        "Being Accurate. We strive to be better every day and provide best of the candidate's in our clients. Being Reliable. Our yearlong roots in recruiting services has made us a reliable source for our clients as we deliver the timely services in a satisfactory manner...",
-      link: "LEARN MORE",
+        "From staffing to skill development, we offer comprehensive solutions tailored to your needs.",
       gradient: "from-[#a18cd1] via-[#fbc2eb] to-[#fbc2eb]",
     },
     {
-      icon: <FontAwesomeIcon icon={faHandshake} size="2x" />,
-      title: "COMPANY VALUES",
+      icon: <FontAwesomeIcon icon={faShieldAlt} size="2x" />,
+      title: "Transparency",
       description:
-        "We live by our values. Our endeavour is to fulfill the promise to deliver the Quality service to our clients on time. Honesty and fairness are the virtues that you will see in our work. We value people and bring vital respect to the wealth of diverse partnerships...",
-      link: "LEARN MORE",
+        "Honest and reliable services with a client-centric approach you can trust.",
       gradient: "from-[#f093fb] via-[#f5576c] to-[#f093fb]",
+    },
+    {
+      icon: <FontAwesomeIcon icon={faHandshake} size="2x" />,
+      title: "Client-Centric Approach",
+      description:
+        "We listen, understand, and deliver solutions that align with your business needs and goals.",
+      gradient: "from-[#ffcc00] via-[#ff8800] to-[#ff5500]",
     },
   ];
 
   return (
-    <section className="py-12 md:p-16 sm:-16 bg-gradient-to-r from-[#a7ead0] via-[#c0e8d5] to-[#f0f0f0]">
-      <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center mb-8">
-          <h2 className="text-4xl font-bold">About VRS</h2>
-          <button className="bg-red-500 hover:bg-red-700 text-gray-800 font-bold py-2 px-4 rounded">
-            Fraud Alert
-          </button>
-        </div>
-        <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
-          {cardData.map((card, index) => (
-            <motion.div
-              key={index}
-              className={`w-full md:w-1/3 bg-gradient-to-b ${card.gradient} rounded-lg shadow-lg p-8 relative overflow-hidden`}
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.3 }}
-              viewport={{ once: true }}
-              whileHover={{ rotateY: 360, scale: 1.05 }}
-            >
-              <div className="text-center mb-6">{card.icon}</div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">{card.title}</h3>
-              <p className="text-gray-800 mb-6 text-justify">{card.description}</p>
-              <div className="text-center absolute bottom-6 left-1/2 -translate-x-1/2">
-                <a href="#" className="text-gray-800 font-semibold underline hover:text-gray-200">
-                  {card.link}
-                </a>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+    <section className="py-12 px-6 bg-gradient-to-r from-[#a7ead0] via-[#c0e8d5] to-[#f0f0f0] text-gray-900">
+      <div className="container mx-auto text-center max-w-5xl">
+        <h2 className="text-4xl font-bold mb-4">About VRS Manpower Solutions</h2>
+        <p className="text-lg mb-6">
+          At VRS Manpower Solutions, we are more than just a recruitment agency – we are your partners in growth.
+          Founded with a vision to bridge the gap between talent and opportunity, we have grown into a trusted name in manpower solutions.
+        </p>
+        <p className="text-lg mb-10">
+          Our mission is to provide innovative, reliable, and customized solutions for businesses, colleges, hospitals, and manufacturing units.
+          From recruitment to training and consulting, we are committed to delivering excellence at every step.
+        </p>
+      </div>
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {cardData.map((card, index) => (
+          <motion.div
+            key={index}
+            className={`bg-gradient-to-b ${card.gradient} rounded-lg shadow-lg p-6 text-center`}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+            viewport={{ once: true }}
+            whileHover={{ scale: 1.05 }}
+          >
+            <div className="mb-4">{card.icon}</div>
+            <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
+            <p className="text-gray-800">{card.description}</p>
+          </motion.div>
+        ))}
+      </div>
+      <div className="text-center mt-10">
+        <p className="text-lg font-medium text-gray-900">
+          Join hands with VRS Manpower Solutions and experience the difference of working with a team that truly cares about your success.
+        </p>
       </div>
     </section>
   );

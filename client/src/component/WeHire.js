@@ -1,5 +1,5 @@
 import React from "react";
-import { FaHandPointDown, FaHandPointUp } from "react-icons/fa";
+import { FaHandPointDown } from "react-icons/fa";
 
 const WeHire = () => {
   return (
@@ -12,11 +12,9 @@ const WeHire = () => {
         {/* First Box - Job Hunting */}
         <div className="relative group w-full md:w-1/3">
           <div className="w-full h-full bg-[#5AC59A] text-white text-lg font-medium p-6 rounded-lg shadow-lg transition-transform duration-700 group-hover:rotate-[360deg]">
-            <FaHandPointDown className="text-3xl mx-auto mb-4 " />
+            <FaHandPointDown className="text-3xl mx-auto mb-4" />
             <p className="text-justify">
-              We Create Exemplary Opportunities for Candidates & Businesses, by
-              Virtue of the Wide Variety of Services We are able to Provide
-              across Various Industry Verticals.
+              We create exceptional opportunities for candidates and businesses alike. Our extensive range of services spans various industry verticals, ensuring that we connect the right talent with the right roles.
             </p>
           </div>
         </div>
@@ -26,9 +24,7 @@ const WeHire = () => {
           <div className="w-full h-full bg-[#3F50E7] text-white text-lg font-medium p-6 rounded-lg shadow-lg transition-transform duration-700 group-hover:rotate-[360deg]">
             <FaHandPointDown className="text-3xl mx-auto mb-4" />
             <p className="text-justify">
-              We are absolutely committed to finding and placing candidates into
-              the best possible roles with companies based on their requirements
-              & interests.
+              Our commitment is to find and place candidates in roles that align with their skills and aspirations. We work closely with companies to understand their specific requirements, ensuring a perfect match for both parties.
             </p>
           </div>
         </div>
@@ -36,12 +32,9 @@ const WeHire = () => {
 
       {/* Job Hunting Section */}
       <div className="mt-8 shadow-lg flex flex-col items-center text-center md:w-1/2 mx-auto p-3">
-        <h3 className="text-4xl font-bold text-gray-900">Job Hunting?</h3>
+        <h3 className="text-4xl font-bold text-gray-900">Are You Job Hunting?</h3>
         <p className="text-gray-600 max-w-2xl mt-3 p-5">
-          If you are fresh out of college, an entry-level executive, a senior
-          executive, or someone in a very senior managerial role and you are
-          looking for a change in your work profile, then you are at the right
-          place.
+          Whether you're a recent graduate, an entry-level professional, a seasoned executive, or a senior manager seeking a new challenge, you've come to the right place. We are here to guide you through your job search journey and help you find the perfect opportunity.
         </p>
         <button className="mt-4 px-6 py-3 bg-[#28A469] text-white font-semibold rounded-lg shadow-md hover:bg-[#1F8651] transition">
           REACH OUT TO US

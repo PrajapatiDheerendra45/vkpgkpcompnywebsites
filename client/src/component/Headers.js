@@ -57,7 +57,7 @@ const Header = () => {
             </li>
             <li className="lg:block py-2 lg:py-0 px-4">
               <a href="/team" className="text-gray-800 hover:text-blue-500">
-                Team IMS
+                Team VRS
               </a>
             </li>
             <li className="lg:block py-2 lg:py-0 px-4">

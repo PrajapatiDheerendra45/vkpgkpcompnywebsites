@@ -3,9 +3,6 @@ import React from "react";
 const WeValueTeamWork = () => {
   return (
     <section className="relative bg-[#f3fbf7] py-16 px-6 md:px-16">
-      {/* Background Pattern */}
-   
-
       {/* Content Container */}
       <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
         {/* Video Embed */}
@@ -19,26 +16,21 @@ const WeValueTeamWork = () => {
             allowFullScreen
           ></iframe>
         </div>
-        
 
         {/* Text Content */}
         <div className="w-full md:w-2/3">
           <h2 className="text-4xl font-bold text-gray-900">
-            We Value <span className="text-green-600">Team Work</span>
+            We Value <span className="text-green-600">Teamwork</span>
           </h2>
           <div className="w-16 h-1 bg-green-500 my-4"></div>
           <p className="text-gray-700 text-lg leading-relaxed">
-            At  VRS Manpower Solutions Pvt. Ltd., we take great pride in
-            providing our employees with exceptional working conditions. We
-            understand that a positive work environment is crucial for
-            productivity and job satisfaction, which is why we go above and
-            beyond to ensure that our employees feel valued and supported.
+            At VRS Manpower Solutions Pvt. Ltd., we believe that teamwork is the cornerstone of our success. We take great pride in fostering a collaborative environment where every employee feels valued and empowered to contribute their best.
           </p>
           <p className="text-gray-700 text-lg mt-4">
-            Our office space is clean, bright, and spacious, with plenty of
-            natural light and comfortable seating. We also provide our employees
-            with the latest technology and equipment to help them perform their
-            job to the best of their abilities.
+            Our commitment to creating a positive work atmosphere is reflected in our clean, bright, and spacious office. With ample natural light and comfortable seating, we ensure that our employees have the ideal setting to thrive. We also equip our team with the latest technology and tools, enabling them to perform at their highest potential.
+          </p>
+          <p className="text-gray-700 text-lg mt-4">
+            By prioritizing teamwork and employee well-being, we not only enhance productivity but also cultivate a culture of innovation and mutual support. Together, we achieve great things!
           </p>
         </div>
       </div>
