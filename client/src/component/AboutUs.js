@@ -36,7 +36,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <section className="py-12 px-6 bg-gradient-to-r from-[#a7ead0] via-[#c0e8d5] to-[#f0f0f0] text-gray-900">
+    <section id="about" className="py-12 px-6 bg-gradient-to-r from-[#a7ead0] via-[#c0e8d5] to-[#f0f0f0] text-gray-900">
       <div className="container mx-auto text-center max-w-5xl">
         <h2 className="text-4xl font-bold mb-4">About VRS Manpower Solutions</h2>
         <p className="text-lg mb-6">

@@ -56,26 +56,26 @@ function Footer() {
   };
 
   return (
-    <footer className="bg-gradient-to-r from-blue-800 via-blue-600 to-blue-500 py-12 text-white">
+    <footer id="contact" className="bg-gradient-to-r from-blue-800 via-blue-600 to-blue-500 py-12 text-white">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-6">Get in Touch</h2>
-        <p className="text-center text-lg font-semibold">VRS Manpower Solutions Pvt Ltd</p>
-        <p className="text-center text-sm mb-10">An ISO 9001:2015 Certified Recruitment Company</p>
+        <p className="text-center text-lg font-semibold">VRS Manpower Solutions </p>
+        {/* <p className="text-center text-sm mb-10">An ISO 9001:2015 Certified Recruitment Company</p> */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mb-10 p-5">
           <div>
             <FaHome className="text-3xl mb-2" />
             <p className="font-semibold">PHONE</p>
-            <p>+91-731-4071119</p>
+            <p>+91-6232513226</p>
           </div>
           <div>
             <BiSolidPhoneCall className="text-3xl mb-2" />
             <p className="font-semibold">MOBILE</p>
-            <p>+91-7566661930</p>
+            <p>+91-6232513226</p>
           </div>
           <div>
             <FontAwesomeIcon icon={faEnvelope} className="text-3xl mb-2" />
             <p className="font-semibold">EMAIL</p>
-            <p>info@manpowersolution.com</p>
+            <p>vrs.solution12@gmail.com</p>
           </div>
         </div>
         <div className="grid md:grid-cols-2 gap-8 p-5">
@@ -97,20 +97,20 @@ function Footer() {
             <div className="bg-blue-100 border shadow-lg rounded-lg p-6">
               <Building className="w-10 h-10 text-blue-700 mb-3" />
               <h4 className="font-bold text-lg">Corporate Office</h4>
-              <p>233-241, 2nd Floor, Orbit Mall</p>
-              <p>Near C-21 Mall, MR9 Square</p>
-              <p>Vijay Nagar, Indore, MP - 452010</p>
+              <p>Address Satyam Colony, </p>
+              <p>Khandwa Naka,</p>
+              <p>Indore – 452001, India</p>
             </div>
             <div className="bg-green-100 border shadow-lg rounded-lg p-6">
               <MapPin className="w-10 h-10 text-green-700 mb-3" />
               <h4 className="font-bold text-lg">Branch Office</h4>
-              <p>Office No. 264, 2nd Floor, Orbit Mall</p>
-              <p>Near C-21 Mall, Vijay Nagar</p>
-              <p>Indore, MP - 452010</p>
+              <p>Address Satyam Colony, </p>
+              <p>Khandwa Naka,</p>
+              <p>Indore – 452001, India</p>
             </div>
           </div>
         </div>
-        <p className="text-center mt-8 text-sm">&copy; 2023 VRS Manpower Solutions Pvt Ltd</p>
+        <p className="text-center mt-8 text-sm">&copy; 2025 VRS Manpower Solutions Pvt Ltd</p>
       </div>
     </footer>
   );

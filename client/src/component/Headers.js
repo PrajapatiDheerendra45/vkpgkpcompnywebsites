@@ -18,7 +18,7 @@ const Header = () => {
             <div className="text-center md:text-left w-full md:w-auto">
               {" "}
               {/* Added w-full md:w-auto */}
-              <p className="text-lg">📳+917566661690,📲+917314071119</p>
+              <p className="text-lg">📳+916232513226,📲+916232513226</p>
             </div>
             <div className="text-center md:text-left w-full md:w-auto mt-2 md:mt-0">
               {" "}
@@ -27,7 +27,7 @@ const Header = () => {
                 href="mailto:info@manpowersolution.com"
                 className="text-white hover:text-blue-300 md:ml-2 text-lg"
               >
-                ✉️info@manpowersolution.com
+                ✉️vrs.solution12@gmail.com
               </a>
             </div>
           </div>
@@ -46,22 +46,22 @@ const Header = () => {
             }`}
           >
             <li className="lg:block py-2 lg:py-0 px-4">
-              <a href="/" className="text-gray-800 hover:text-blue-500">
+              <a href="#home" className="text-gray-800 hover:text-blue-500">
                 Home
               </a>
             </li>
             <li className="lg:block py-2 lg:py-0 px-4">
-              <a href="/about" className="text-gray-800 hover:text-blue-500">
+              <a href="#about" className="text-gray-800 hover:text-blue-500">
                 About Us
               </a>
             </li>
             <li className="lg:block py-2 lg:py-0 px-4">
-              <a href="/team" className="text-gray-800 hover:text-blue-500">
+              <a href="#team" className="text-gray-800 hover:text-blue-500">
                 Team VRS
               </a>
             </li>
             <li className="lg:block py-2 lg:py-0 px-4">
-              <a href="/services" className="text-gray-800 hover:text-blue-500">
+              <a href="#services" className="text-gray-800 hover:text-blue-500">
                 Services
               </a>
             </li>
@@ -71,7 +71,7 @@ const Header = () => {
               </a>
             </li>
             <li className="lg:block py-2 lg:py-0 px-4">
-              <a href="/contact" className="text-gray-800 hover:text-blue-500">
+              <a href="#contact" className="text-gray-800 hover:text-blue-500">
                 Contact Us
               </a>
             </li>

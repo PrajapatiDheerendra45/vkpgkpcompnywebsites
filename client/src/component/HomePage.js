@@ -1,6 +1,6 @@
 export default function HomePage() {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white flex flex-col items-center justify-center p-6">
+      <div id="home" className="min-h-screen bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white flex flex-col items-center justify-center p-6">
         <div className="max-w-4xl text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">
             Your One-Stop Solution for Manpower, Recruitment, and Business Growth
