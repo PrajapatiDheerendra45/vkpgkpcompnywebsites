@@ -2,7 +2,7 @@ import React from "react";
 
 const IndustriesWeServe = () => {
   return (
-    <section className="py-16 px-6 md:px-16 bg-gray-100">
+    <section id="other" className="py-16 px-6 md:px-16 bg-gray-100">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-gray-900 mb-6">
           Industries We Serve – <span className="text-green-600">Tailored Solutions for Every Sector</span>

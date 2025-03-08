@@ -16,7 +16,7 @@ const WeValueTeamWork = () => {
             allowFullScreen
           ></iframe> */}
           <img
-          className="w-full max-w-sm md:max-w-xs rounded-lg shadow-lg"
+          className="w-full max-w-sm md:max-w-xs bg-black p-5 rounded-lg shadow-lg"
           width="100%"
           height="250"
           src={logo}

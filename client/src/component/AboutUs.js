@@ -24,15 +24,16 @@ const AboutUs = () => {
       title: "Transparency",
       description:
         "Honest and reliable services with a client-centric approach you can trust.",
-      gradient: "from-[#f093fb] via-[#f5576c] to-[#f093fb]",
+      gradient: "from-[#a8edea] via-[#fed6e3] to-[#a8edea]", // Soft Aqua & Pink
     },
     {
       icon: <FontAwesomeIcon icon={faHandshake} size="2x" />,
       title: "Client-Centric Approach",
       description:
         "We listen, understand, and deliver solutions that align with your business needs and goals.",
-      gradient: "from-[#ffcc00] via-[#ff8800] to-[#ff5500]",
+      gradient: "from-[#f6d365] via-[#fda085] to-[#f6d365]", // Light Gold & Peach
     },
+    
   ];
 
   return (

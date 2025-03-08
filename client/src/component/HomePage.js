@@ -34,9 +34,12 @@ export default function HomePage() {
             With a focus on quality, efficiency, and trust, we help you achieve your goals.
           </p>
           <div className="flex justify-center mt-6">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full text-lg shadow-lg transition-all">
+          <a href="#stareted">
+
+          <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full text-lg shadow-lg transition-all">
               Get Started Today
             </button>
+          </a>
           </div>
         </div>
       </div>

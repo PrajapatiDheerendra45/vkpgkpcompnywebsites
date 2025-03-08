@@ -10,17 +10,18 @@ import meta from "../assets/images/meta.jpeg";
 import motrola from "../assets/images/motrola.jpeg";
 import samsung from "../assets/images/samsung.png";
 import tata from "../assets/images/tata.png";
+import logo from "../assets/images/VRSLOGO.png"
 
 const clients = [
-  { img: airtel, name: "VE Commercial Vehicles" },
-  { img: amazone, name: "Vivo" },
-  { img: ast, name: "WNS" },
-  { img: cocacola, name: "Yash Technologies" },
-  { img: hp, name: "Acoem" },
-  { img: meta, name: "Meta" },
-  { img: motrola, name: "Motorola" },
-  { img: samsung, name: "Samsung" },
-  { img: tata, name: "Tata" },
+  // { img: airtel, name: "VE Commercial Vehicles" },
+  // { img: amazone, name: "Vivo" },
+  // { img: ast, name: "WNS" },
+  // { img: cocacola, name: "Yash Technologies" },
+  // { img: hp, name: "Acoem" },
+  // { img: meta, name: "Meta" },
+  // { img: motrola, name: "Motorola" },
+  // { img: samsung, name: "Samsung" },
+  { img: logo, name: "VRS" },
 ];
 
 const OurClients = () => {
@@ -61,11 +62,11 @@ const OurClients = () => {
   return (
     <div className="w-full py-10 relative text-center bg-green-100">
       {/* Mobile Image */}
-      <div className="flex justify-center items-center h-full mt-14">
+      <div className="flex justify-center bg-black items-center h-full mt-14">
         <img
           src={clientImage}
           alt="image"
-          className="h-36 object-contain block md:hidden"
+          className="h-36 bg-black object-contain block md:hidden"
         />
       </div>
 

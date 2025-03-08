@@ -78,8 +78,8 @@ function Footer() {
             <p>vrs.solution12@gmail.com</p>
           </div>
         </div>
-        <div className="grid md:grid-cols-2 gap-8 p-5">
-          <div className="bg-white text-black p-6 rounded-lg shadow-lg">
+        <div id="stareted" className="grid md:grid-cols-2 gap-8 p-5 w">
+          <div className="bg-white text-black p-6 rounded-lg shadow-lg w-1/2 max-w-2xl justify-center item-center">
             <h3 className="text-2xl font-semibold text-center text-blue-600 mb-4">Contact Us</h3>
             <form className="space-y-4" onSubmit={handleSubmit}>
               <input type="text" id="name" value={formData.name} onChange={handleChange} placeholder="Your Name" className="w-full px-4 py-2 border rounded-lg" />
@@ -110,7 +110,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <p className="text-center mt-8 text-sm">&copy; 2025 VRS Manpower Solutions Pvt Ltd</p>
+        <p className="text-center mt-8 text-sm">&copy; 2025 VRS Manpower Solutions </p>
       </div>
     </footer>
   );
